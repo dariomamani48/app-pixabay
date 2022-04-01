@@ -1,0 +1,12 @@
+<div class="jumbotron">
+    <form (ngSubmit)="buscarImagenes()" ><!-- atraves de ng submit ejecutamos un metodo creado para buscar las imagenes cuando se precione el boton de subnit -->
+        <div class="row">
+            <div class="col-lg-8">
+                <input type="text" class="form-control form-control lg" name="img" placeholder="buscar una imagen" [(ngModel)]="nombreImagen"><!-- ng model nos permite pasar el dato del input a los metodos -->
+            </div>
+            <div class="col-lg-4">
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Buscar</button>
+            </div>
+        </div>
+    </form>
+</div>
